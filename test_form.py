@@ -7,7 +7,7 @@ import time
 def setup():
     global name,driver
     name = input("enter the name")
-    driver =webdriver.Chrome(ChromeDriverManager().install())
+    driver = webdriver.Chrome(ChromeDriverManager().install())
     driver.maximize_window()
     yield
     time .sleep(10)
